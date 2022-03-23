@@ -103,6 +103,6 @@ def main():
             major("Pharmacology")
           else:
             major("Chemistry")
-  print("Goodbye!")
+  print("Goodbye!!")
 
 
