@@ -2,7 +2,7 @@
 def major(str):
   print("You are recommended the " + str + " major!")
 
-def major_recommender():
+def main():
   print("Welcome to the Science Major recommender!")
   one_feild = input("Do you like you focus in on one field? Type 'Y' or 'N'")
   if one_feild.lower() == "n":
@@ -105,5 +105,4 @@ def major_recommender():
             major("Chemistry")
   print("Goodbye!")
 
-major_recommender() 
 
