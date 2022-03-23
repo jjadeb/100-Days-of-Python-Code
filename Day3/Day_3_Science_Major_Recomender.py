@@ -14,7 +14,7 @@ def main():
   else:
     nature = input("Are you passionate about natural things? Y or N")
     if nature.lower() == "y":
-      made_of = input("Are you passionate about what natrure is made of? Y or N")
+      made_of = input("Are you passionate about what nature is made of? Y or N")
       if made_of.lower() == "n":
         living = input("Interested in living nature? Y or N")
         if living.lower() == "y":
