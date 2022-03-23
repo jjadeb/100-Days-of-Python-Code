@@ -105,4 +105,4 @@ def main():
             major("Chemistry")
   print("Goodbye!!")
 
-
+main()
