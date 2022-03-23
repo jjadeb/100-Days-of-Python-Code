@@ -13,5 +13,4 @@ def main() :
   
   print(f"Each person should pay: ${final_cost}")
 
-main()
 
