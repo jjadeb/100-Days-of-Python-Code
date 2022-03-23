@@ -1,2 +1,2 @@
 language = "python3"
-run = "Day 3/Day 3 - Science Major Recomender.py"
+run = "python3 Day 3/Day_3_Science_Major_Recomender.py"
