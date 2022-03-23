@@ -1,6 +1,6 @@
 
 
-def main() :
+def tipCalc() :
   print("Welcome to the tip calculator!")
   
   cost = float(input("What was the total bill?\n"))
