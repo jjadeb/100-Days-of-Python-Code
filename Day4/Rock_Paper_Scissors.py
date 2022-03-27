@@ -33,7 +33,7 @@ scissors = """
 """
 
 print("Welcome to the game Rock, Paper, Scissors! Good luck!")
-rps = input("What do you choose? Rock, Paper, or Scissors").lower()
+rps = input("What do you choose? Rock, Paper, or Scissors \n").lower()
 
 if rps == "rock":
   print("Your choice:")
