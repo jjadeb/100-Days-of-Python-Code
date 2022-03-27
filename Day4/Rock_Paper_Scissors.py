@@ -54,32 +54,19 @@ computer_choice = random.choice(rock_paper_scissors)
 if computer_choice == "rock":
   print("Computer's choice:")
   print(rock)
-  if rps == "rock":
-    print("There is a tie.")
-  elif rps == "paper":
-    print("You win!")
-  else:
-    print("You lose!")
 elif computer_choice == "paper":
   print("Computer's choice:")
   print(paper)
-  if rps == "rock":
-    print("You lose!")
-  elif rps == "paper":
-    print("There is a tie.")
-  else:
-    print("You win!")
 else:
   print("Computer's choice:")
   print(scissors)
-  if rps == "rock":
-    print("You win!")
-  elif rps == "paper":
-    print("You lose!")
-  else:
-    print("There is a tie.")
 
-
+if computer_choice == rps:
+  print("There is a tie.")
+elif (rps == "rock" and computer_choice == "scissors") or (rps == "scissors" and computer_choice == "paper") or (rps == "paper" and computer_choice == "rock"):
+  print("You win!")
+else:
+  print("You lose")
 
 
 
