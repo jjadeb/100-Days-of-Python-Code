@@ -11,6 +11,7 @@ for q in question_data:
 
 
 def play_quiz_game():
+    """Starts the quiz and loops through questions."""
     print("Welcome to my Europe Quiz!")
     quiz = QuizBrain(question_bank)
     while quiz.still_has_questions():
