@@ -1,7 +1,7 @@
 # 100-Days-of-Python-Code
 Completing  "100 Days of Code: The Complete Python Pro Bootcamp for 2022" on UDemy. Progress will be uploaded here!
 
-Favourite projects: Day 3, Day 11, and Day 15.
+Favourite projects: Day 3, Day 11, and Day 17.
 
 **Beginner**
 <br> Day 1: A pirate name generator.
@@ -16,3 +16,4 @@ Favourite projects: Day 3, Day 11, and Day 15.
 
 **Intermediate**
 <br> Day 15: A coffee machine where the user can order 3 different drinks and pay in coins.
+<br> Day 17: Used OOD to create a quiz using questions I created while travelling through Europe.
