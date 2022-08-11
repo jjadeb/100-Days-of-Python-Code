@@ -17,4 +17,4 @@ Favourite projects: Day 3, Day 11, and Day 17.
 **Intermediate**
 <br> Day 15: A coffee machine where the user can order 3 different drinks and pay in coins.
 <br> Day 17: Used OOD to create a quiz using questions I created while travelling through Europe.
-<br> Day 18: Created a unique Hirst dot artwork with colours grabbed from actual Hirst art
+<br> Day 18: Created a unique Hirst dot artwork with colours grabbed from actual Hirst art. Used turtle package for GUI.
