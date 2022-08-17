@@ -14,6 +14,7 @@ pink = Turtle()
 
 # Create turtle list
 turtles = [red, blue, purple, yellow, pink]
+finishers = []
 
 # Set turtle attributes
 red.color("red")
@@ -26,6 +27,7 @@ color_list = ""
 for turtle in turtles:
     turtle.penup()
     turtle.shapesize(3)
+    turtle.shape("turtle")
     color_list += f"{turtle.fillcolor()}; "
 
 
@@ -52,30 +54,40 @@ def places_please():
 def race():
     """Turtles race across the screen"""
     places_please()
-    while winning_turtle() == "":
+    while len(finishers) != len(turtles):
         for t in turtles:
             advance = random.randint(0, 10)
             t.forward(advance)
+        finishing_turtles()
     race_screen.bye()
-    winner = winning_turtle()
+    winner = finishers[0]
     print(f"The winning turtle is {winner}.")
-    check_bet(winner)
+    check_bet()
 
 
-def check_bet(winner):
+def check_bet():
     """Check if the users bet matches the winning turtle and print result"""
-    if bet == winner:
-        print("You win!")
+    if bet == finishers[0]:
+        print("You win gold!")
+    elif bet == finishers[1]:
+        print(f"{str.title(bet)}'s place is {check_turtle_placement()}nd. You win silver!")
+    elif bet == finishers[2]:
+        print(f"{str.title(bet)}'s place is {check_turtle_placement()}rd. You win bronze!")
     else:
-        print(f"You lose! You chose {bet}.")
+        print(f"You lose. {str.title(bet)}'s place is {check_turtle_placement()}th.")
 
 
-def winning_turtle():
-    """Check if there is a winning turtle, if so return color"""
+def check_turtle_placement():
+    return finishers.index(bet) + 1
+
+
+def finishing_turtles():
+    """Check if turtles cross finish line, if so add them to finishers"""
     for t in turtles:
         if t.xcor() >= width:
-            return t.fillcolor()
-    return ""
+            color = t.fillcolor()
+            if not finishers.__contains__(color):
+                finishers.append(color)
 
 
 # Other screen attributes
