@@ -6,6 +6,12 @@ LEFT = 180
 RIGHT = 0
 
 
+def design_turtle(t):
+    t.shape("square")
+    t.fillcolor("white")
+    t.penup()
+
+
 class Snake:
 
     def __init__(self):
@@ -18,9 +24,7 @@ class Snake:
         position = 0
         for t in range(0, 3):
             t = Turtle()
-            t.shape("square")
-            t.fillcolor("white")
-            t.penup()
+            design_turtle(t)
             t.goto((position * -20, 0))
             position += 1
             self.segments.append(t)
@@ -33,6 +37,20 @@ class Snake:
             y = new_place.ycor()
             self.segments[seg_num].goto(x, y)
         self.head.forward(MOVE_DISTANCE)
+
+    def add_segment(self):
+        """Adds segment to snake"""
+        t = Turtle()
+        design_turtle(t)
+        position = self.segments[-1].pos()
+        t.setpos(position)
+        self.segments.append(t)
+
+    def tail_collide(self):
+        for i in range(1, len(self.segments)-1):
+            if self.segments[i].distance(self.head.pos()) < 15:
+                return True
+        return False
 
     def up(self):
         """Turns snake upwards, if not facing downwards"""
