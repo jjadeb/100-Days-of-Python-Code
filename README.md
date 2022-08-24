@@ -1,7 +1,7 @@
 # 100-Days-of-Python-Code
 Completing  "100 Days of Code: The Complete Python Pro Bootcamp for 2022" on UDemy. Progress will be uploaded here!
 
-Favourite projects: Day 3, Day 11, Day 17, and Day 19.
+Favourite projects: Day 3, Day 11, Day 17, and Day 20/21.
 
 **Beginner**
 <br> Day 1: A pirate name generator.
@@ -19,3 +19,4 @@ Favourite projects: Day 3, Day 11, Day 17, and Day 19.
 <br> Day 17: Used OOD to create a quiz using questions I created while travelling through Europe.
 <br> Day 18: A unique Hirst dot artwork with colours grabbed from actual Hirst art. Used turtle package for GUI.
 <br> Day 19: A turtle race that users can bet on. Used turtle package for GUI.
+<br> Day 20/21: The classic snake game using OOD, and the turtle package.
