@@ -3,6 +3,7 @@ import random
 
 
 class Food(Turtle):
+    """Food for the snake to eat"""
 
     def __init__(self):
         super().__init__()
@@ -14,6 +15,7 @@ class Food(Turtle):
         self.random_location()
 
     def random_location(self):
+        """Moves food to a random location"""
         rand_x = random.randint(-280, 280)
         rand_y = random.randint(-280, 280)
         self.goto(rand_x, rand_y)

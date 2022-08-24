@@ -30,7 +30,7 @@ class Snake:
             self.segments.append(t)
 
     def move(self):
-        "Moves snake forward"
+        """Moves snake forward"""
         for seg_num in range(len(self.segments) - 1, 0, -1):
             new_place = self.segments[seg_num - 1]
             x = new_place.xcor()
@@ -47,8 +47,8 @@ class Snake:
         self.segments.append(t)
 
     def tail_collide(self):
-        for i in range(1, len(self.segments)-1):
-            if self.segments[i].distance(self.head.pos()) < 15:
+        for i in self.segments[1:]:
+            if i.distance(self.head.pos()) < 15:
                 return True
         return False
 

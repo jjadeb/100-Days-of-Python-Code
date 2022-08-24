@@ -39,7 +39,6 @@ while game_is_on:
         score_board.game_over()
 
     # Detect tail collision
-    # If head collides with any segment in the tail - trigger game over sequence
     if snake.tail_collide():
         game_is_on = False
         score_board.game_over()
