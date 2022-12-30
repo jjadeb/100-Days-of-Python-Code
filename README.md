@@ -1,5 +1,5 @@
 # 100-Days-of-Python-Code
-Completing  "100 Days of Code: The Complete Python Pro Bootcamp for 2022" on UDemy. Progress will be uploaded here!
+Completed 21 days of "100 Days of Code: The Complete Python Pro Bootcamp for 2022" on UDemy. Stopped at 21 days in order to focus my python learning on managing and visualizing datasets.
 
 Favourite projects: Day 3, Day 11, Day 17, and Day 20/21.
 
